@@ -8,6 +8,12 @@
           "build/netstandard2.0/coverlet.collector.targets": {}
         }
       },
+      "JunitXml.TestLogger/8.0.0": {
+        "type": "package",
+        "build": {
+          "build/netstandard2.0/JUnitXml.TestLogger.props": {}
+        }
+      },
       "Microsoft.AspNetCore.OpenApi/10.0.3": {
         "type": "package",
         "dependencies": {
@@ -518,6 +524,23 @@
         "coverlet.collector.nuspec"
       ]
     },
+    "JunitXml.TestLogger/8.0.0": {
+      "sha512": "rO2ugKcbVy8SHNKeqfX/DshUcTtolnEUwMKehVB6gh5/YoL+U07zoACCyGRvgMtzq7fr9o6GLkXOmVj9WMgx+w==",
+      "type": "package",
+      "path": "junitxml.testlogger/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/_common/Microsoft.VisualStudio.TestPlatform.Extension.JUnit.Xml.TestLogger.dll",
+        "build/_common/Spekt.TestLogger.dll",
+        "build/netstandard2.0/JUnitXml.TestLogger.props",
+        "docs/CHANGELOG.md",
+        "docs/README.md",
+        "junitxml.testlogger.8.0.0.nupkg.sha512",
+        "junitxml.testlogger.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "Microsoft.AspNetCore.OpenApi/10.0.3": {
       "sha512": "SAvSrKDgnY5GDjDAngOXxPhUvEKlTU/0zIq8zidqHvh/xnZBPs0Vc4LqwyvnmnafNnyUaivtRABz4K4wodXfSg==",
       "type": "package",
@@ -1000,6 +1023,7 @@
   "projectFileDependencyGroups": {
     "net10.0": [
       "JenkinsDemo >= 1.0.0",
+      "JunitXml.TestLogger >= 8.0.0",
       "Microsoft.NET.Test.Sdk >= 17.14.1",
       "coverlet.collector >= 6.0.4",
       "xunit >= 2.9.3",
@@ -1061,6 +1085,10 @@
       "net10.0": {
         "targetAlias": "net10.0",
         "dependencies": {
+          "JunitXml.TestLogger": {
+            "target": "Package",
+            "version": "[8.0.0, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[17.14.1, )"

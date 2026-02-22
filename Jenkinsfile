@@ -13,7 +13,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                bat 'dotnet test -c Release --logger "trx;LogFileName=test_results.trx"'
+                bat 'dotnet test -c Release --logger "junit;LogFilePath=test_results.xml"'
             }
         }
 
@@ -26,7 +26,7 @@ pipeline {
 
     post {
         always {
-            junit allowEmptyResults: true, testResults: '**/*.trx'
+            junit '**/test_results.xml'
         }
     }
 }
