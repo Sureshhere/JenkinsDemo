@@ -106,3 +106,4 @@ C:\Users\SureshChoudhary\Desktop\Learnings\JenkinsTutorials\JenkinsDemo.Tests\ob
 C:\Users\SureshChoudhary\Desktop\Learnings\JenkinsTutorials\JenkinsDemo.Tests\obj\Debug\net10.0\JenkinsDemo.Tests.pdb
 C:\Users\SureshChoudhary\Desktop\Learnings\JenkinsTutorials\JenkinsDemo.Tests\obj\Debug\net10.0\JenkinsDemo.Tests.genruntimeconfig.cache
 C:\Users\SureshChoudhary\Desktop\Learnings\JenkinsTutorials\JenkinsDemo.Tests\obj\Debug\net10.0\ref\JenkinsDemo.Tests.dll
+C:\Users\SureshChoudhary\Desktop\Learnings\JenkinsTutorials\JenkinsDemo.Tests\obj\Debug\net10.0\JenkinsDemo.Tests.sourcelink.json

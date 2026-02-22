@@ -31,3 +31,4 @@ C:\Users\SureshChoudhary\Desktop\Learnings\JenkinsTutorials\JenkinsDemo\obj\Debu
 C:\Users\SureshChoudhary\Desktop\Learnings\JenkinsTutorials\JenkinsDemo\obj\Debug\net10.0\JenkinsDemo.pdb
 C:\Users\SureshChoudhary\Desktop\Learnings\JenkinsTutorials\JenkinsDemo\obj\Debug\net10.0\JenkinsDemo.genruntimeconfig.cache
 C:\Users\SureshChoudhary\Desktop\Learnings\JenkinsTutorials\JenkinsDemo\obj\Debug\net10.0\ref\JenkinsDemo.dll
+C:\Users\SureshChoudhary\Desktop\Learnings\JenkinsTutorials\JenkinsDemo\obj\Debug\net10.0\JenkinsDemo.sourcelink.json
