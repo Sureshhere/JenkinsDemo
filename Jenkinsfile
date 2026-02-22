@@ -8,18 +8,18 @@ pipeline {
         }
 
         stage('Build') {
-            steps { bat 'dotnet build -c Release' }
+            steps { bat 'dotnet build -c Release --no-restore' }
         }
 
         stage('Test') {
             steps {
-                bat 'dotnet test -c Release --logger "junit;LogFilePath=test_results.xml"'
+                bat 'dotnet test -c Release --no-build --no-restore --logger "junit;LogFilePath=test_results.xml"'
             }
         }
 
         stage('Publish') {
             steps {
-                bat 'dotnet publish JenkinsDemo/JenkinsDemo.csproj -c Release -o publish'
+                bat 'dotnet publish JenkinsDemo/JenkinsDemo.csproj -c Release --no-build --no-restore -o publish'
             }
         }
     }
