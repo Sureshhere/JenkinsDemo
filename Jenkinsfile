@@ -4,27 +4,29 @@ pipeline {
     stages {
 
         stage('Restore') {
-            steps {
-                bat 'dotnet restore'
-            }
+            steps { bat 'dotnet restore' }
         }
 
         stage('Build') {
-            steps {
-                bat 'dotnet build --configuration Release --no-restore'
-            }
+            steps { bat 'dotnet build -c Release' }
         }
 
         stage('Test') {
             steps {
-                bat 'dotnet test --configuration Release --no-build'
+                bat 'dotnet test -c Release --logger "trx;LogFileName=test_results.trx"'
             }
         }
 
         stage('Publish') {
             steps {
-                bat 'dotnet publish JenkinsDemo/JenkinsDemo.csproj --configuration Release --no-build -o publish'
+                bat 'dotnet publish JenkinsDemo/JenkinsDemo.csproj -c Release -o publish'
             }
+        }
+    }
+
+    post {
+        always {
+            junit '**/TestResults/*.trx'
         }
     }
 }
