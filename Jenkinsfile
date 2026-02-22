@@ -17,13 +17,13 @@ pipeline {
 
         stage('Test') {
             steps {
-                bat 'dotnet test --no-build --verbosity normal'
+                bat 'dotnet test --configuration Release --no-build'
             }
         }
 
         stage('Publish') {
             steps {
-                bat 'dotnet publish JenkinsDemo/JenkinsDemo.csproj -c Release -o publish --no-build'
+                bat 'dotnet publish JenkinsDemo/JenkinsDemo.csproj --configuration Release --no-build -o publish'
             }
         }
     }
