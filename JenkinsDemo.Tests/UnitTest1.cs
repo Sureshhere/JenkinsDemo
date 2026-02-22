@@ -1,10 +1,13 @@
-﻿namespace JenkinsDemo.Tests;
+﻿
+using Xunit;
 
-public class UnitTest1
+namespace JenkinsDemo.Tests;
+
+public class SampleTests
 {
     [Fact]
-    public void Test1()
+    public void ThisWillFail()
     {
-
+        Assert.True(false);
     }
 }
